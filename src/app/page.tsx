@@ -1,27 +1,32 @@
 import Image from "next/image";
+import { Metadata } from "next";
+import { PageHeader } from "@/components/PageHeader";
 
-export const metadata = {
-  title: 'Павел Лёля - Блог',
-  description: 'Главная страница.',
-}
+export const metadata: Metadata = {
+  title: "Павел Лёля - Блог",
+  description: "Главная страница.",
+};
 
 export default function Home() {
   return (
     <section>
-      <h1 className="mb-8 text-2xl font-semibold tracking-tighter">
-        Добро пожаловать в мой блог!
-      </h1>
-      <Image
-          className="dark:invert"
-          src="/avatar.jpg"
-          alt="Next.js logo"
-          width={150}
-          height={150}
-          priority
-        />
-      <p className="mb-4">
-        Привет! Меня зовут Паша, здесь я делюсь своими мыслями и опытом. Надеюсь, вы найдете здесь что-то полезное и интересное!
-      </p>
+      <PageHeader>👋 Добро пожаловать в мой блог!</PageHeader>
+      <div className="flex flex-col items-center gap-4 sm:flex-row sm:items-start">
+        <div className="relative min-w-1/4">
+          <Image
+            className="rounded-3xl"
+            src="/avatar.jpg"
+            alt="Next.js logo"
+            width={200}
+            height={200}
+            priority
+          />
+        </div>
+        <p className="">
+          Привет! Меня зовут Паша, здесь я делюсь своими мыслями и опытом.
+          Надеюсь, вы найдете здесь что-то полезное и интересное!
+        </p>
+      </div>
     </section>
   );
 }
