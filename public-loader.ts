@@ -1,3 +1,4 @@
 export default function publicLoader({ src }: { src: string }) {
-  return src;
+  const basePath = process.env.BASE_PATH || "";
+  return basePath ? `${basePath}/${src}` : src;
 }
