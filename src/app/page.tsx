@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Metadata } from "next";
 import { PageHeader } from "@/components/PageHeader";
+import { getBasePath } from "@/utils/getBasePath";
 
 export const metadata: Metadata = {
   title: "Павел Лёля - Блог",
@@ -15,7 +16,7 @@ export default function Home() {
         <div className="relative min-w-1/4">
           <Image
             className="rounded-3xl"
-            src="/avatar.jpg"
+            src={`${getBasePath()}/avatar.jpg`}
             alt="Аватар"
             width={200}
             height={200}
