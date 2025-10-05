@@ -2,6 +2,11 @@ import type { NextConfig } from "next";
 import createMDX from "@next/mdx";
 
 const nextConfig: NextConfig = {
+  output: "export",
+  images: {
+    loader: "custom",
+    loaderFile: "./public-loader.ts",
+  },
   pageExtensions: ["js", "jsx", "md", "mdx", "ts", "tsx"],
 };
 
