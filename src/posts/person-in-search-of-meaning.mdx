@@ -1,4 +1,5 @@
 import { RoundedImage } from "../components/RoundedImage";
+import {getBasePath} from "../utils/getBasePath";
 
 export const metadata = {
   title: "Человек в поисках высшего смысла",
@@ -17,7 +18,7 @@ export const metadata = {
 Он говорит о том, что это "высшее измерение" непостижимо рациональными и интеллектуальными методами познания, которыми пользуется наука. В научной картине мира не находится места для конечного смысла. И это очень хорошо видно на иллюстрации.
 
 <RoundedImage
-  src="/blog/posts/person-in-search-of-meaning/line-dots-illustration.jpeg"
+  src={`${getBasePath()}/posts/person-in-search-of-meaning/line-dots-illustration.jpeg`}
   alt="Кривая линия, лежащая в вертикальной плоскости, выглядит как несвязанные между собой точки в горизонтальной плоскости."
   width={600}
 />
