@@ -1,7 +1,12 @@
 import type { NextConfig } from "next";
 import createMDX from "@next/mdx";
 
+const basePath = process.env.BASE_PATH || "";
+const assetPrefix = basePath ? `${basePath}/` : "";
+
 const nextConfig: NextConfig = {
+  basePath,
+  assetPrefix,
   output: "export",
   images: {
     loader: "custom",
