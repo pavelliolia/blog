@@ -16,7 +16,7 @@ export default function Home() {
           <Image
             className="rounded-3xl"
             src="/avatar.jpg"
-            alt="Next.js logo"
+            alt="Аватар"
             width={200}
             height={200}
             priority
