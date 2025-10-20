@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <section>
       <PageHeader>
-        👋 Добро пожаловать в мой блог "Путь к истине в жизни"!
+        👋 Добро пожаловать в мой блог &quot;Путь к истине в жизни&quot;!
       </PageHeader>
       <div className="flex flex-col items-center gap-4 sm:flex-row sm:items-start">
         <div className="relative min-w-1/4">
