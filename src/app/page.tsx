@@ -3,15 +3,20 @@ import { Metadata } from "next";
 import { PageHeader } from "@/components/PageHeader";
 import { getBasePath } from "@/utils/getBasePath";
 
+const description =
+  "Здесь я делюсь своими мыслями и опытом, пытаюсь рассуждать на философские темы. Надеюсь, вы найдете что-то полезное и интересное!";
+
 export const metadata: Metadata = {
-  title: "Павел Лёля - Блог",
-  description: "Главная страница.",
+  title: "Путь к истине в жизни",
+  description,
 };
 
 export default function Home() {
   return (
     <section>
-      <PageHeader>👋 Добро пожаловать в мой блог!</PageHeader>
+      <PageHeader>
+        👋 Добро пожаловать в мой блог "Путь к истине в жизни"!
+      </PageHeader>
       <div className="flex flex-col items-center gap-4 sm:flex-row sm:items-start">
         <div className="relative min-w-1/4">
           <Image
@@ -23,10 +28,9 @@ export default function Home() {
             priority
           />
         </div>
-        <p className="">
-          Привет! Меня зовут Паша, здесь я делюсь своими мыслями и опытом.
-          Надеюсь, вы найдете здесь что-то полезное и интересное!
-        </p>
+        <div>
+          <p>{description}</p>
+        </div>
       </div>
     </section>
   );
