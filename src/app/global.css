@@ -66,7 +66,7 @@ html {
 }
 
 .prose blockquote {
-  @apply overflow-hidden border-l-4 border-gray-300 pl-4 my-4 -ms-5 italic text-gray-800 dark:text-neutral-200;
+  @apply overflow-hidden border-l-4 border-gray-300 ps-3 my-4 -ms-4 italic text-gray-800 dark:text-neutral-200;
 }
 
 .prose h1 {
@@ -95,6 +95,12 @@ html {
 
 .prose ol {
   @apply list-decimal pl-6;
+}
+
+.prose iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border: 0;
 }
 
 pre::-webkit-scrollbar {
