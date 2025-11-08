@@ -93,6 +93,11 @@ html {
   @apply list-disc pl-6 my-4;
 }
 
+/* nested sub-list */
+.prose li ul {
+  @apply my-0;
+}
+
 .prose ol {
   @apply list-decimal pl-6;
 }
