@@ -99,7 +99,7 @@ html {
 }
 
 .prose ol {
-  @apply list-decimal pl-6;
+  @apply list-decimal pl-6 my-4;
 }
 
 .prose iframe {
